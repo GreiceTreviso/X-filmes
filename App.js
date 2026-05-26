@@ -9,12 +9,12 @@ export default function App() {
      
    {/*inicio header*/}
 
-   <view style={styles.cabeçalho}>
+   <View style={styles.cabeçalho}>
   
-   <Feather name="menu" size={24} color="#FF0000" />
+   <Feather name="menu" size={24} color="#FF0000" />    {/*icone do site vector*/}
    
 
-   </view>
+   </View>
 
    <Text style={styles.textoCabe}>X Filmes</Text>
       <TouchableOpacity>
@@ -24,30 +24,25 @@ export default function App() {
    <View style={styles.containerBusca}>
     <TextInput
       placeholder='digite o filme que desejar'
-      style = {styles.inputSearch}
-    ></TextInput>
+      style = {styles.inputSearch}    
+    ></TextInput> {/*barra de pesquisa*/}
 
 
     <TouchableOpacity>
     <Ionicons name="search-circle-sharp" size={24} color="black" />
-    </TouchableOpacity>
+    </TouchableOpacity>    {/*icone de pesquisa*/}
 </View>
 
- <View>
+ 
 {/*inicio do banner*/}
 
     <Text style={styles.textao}> Em Cartaz </Text>
 
     <Image
-    source={require("./assets/melhor filme poster.jpg")}
-    style={styles.imageBanner}
-    />
-    <Image
-    source={require("./assets/melhor q iron lung.jpg")}
+    source={require("./imagens/banner.avif")}
     style={styles.imageBanner}
     />
 
-</View>
 
 
 
@@ -98,12 +93,13 @@ const styles = StyleSheet.create({
   },
 
   imageBanner: {
-    width: '250%',
-    height: 250,
+    width: '90%',
+    height: 200,
     marginTop: 15,
     flexDirection: 'row',
     justifyContent: "space-between",
-    borderRadius: 10
+    borderRadius: 10,
+
   },
 
   textao: {
