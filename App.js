@@ -2,37 +2,16 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TouchableOpacity, TextInput, Image } from 'react-native';
 import Feather from '@expo/vector-icons/Feather';
 import Ionicons from '@expo/vector-icons/Ionicons';
-
+import Header from './src/components/header';
+import Search from './src/components/search';
 export default function App() {
   return (
     <View style={styles.container}>
      
-   {/*inicio header*/}
-
-   <View style={styles.cabeçalho}>
+   <Header></Header>
+   <Search></Search>
   
-   <Feather name="menu" size={24} color="#FF0000" />    {/*icone do site vector*/}
    
-
-   </View>
-
-   <Text style={styles.textoCabe}>X Filmes</Text>
-      <TouchableOpacity>
-
-      </TouchableOpacity>
-
-   <View style={styles.containerBusca}>
-    <TextInput
-      placeholder='digite o filme que desejar'
-      style = {styles.inputSearch}    
-    ></TextInput> {/*barra de pesquisa*/}
-
-
-    <TouchableOpacity>
-    <Ionicons name="search-circle-sharp" size={24} color="black" />
-    </TouchableOpacity>    {/*icone de pesquisa*/}
-</View>
-
  
 {/*inicio do banner*/}
 
@@ -61,20 +40,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#363636',
     alignItems: 'center',
-  },
-
-  cabeçalho: {
-   flexDirection:'row',
-   width: "90%",
-   alignItems: 'center',
-   marginTop:10,
-   justifyContent:''
-  },
-
-  textoCabe: {
-   fontSize:25,
-   color:'#FF0000',
-   fontWeight:'bold'
   },
 
   containerBusca: {

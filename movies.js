@@ -31,7 +31,7 @@ const data = [ {
 {
       id: '6',
       nome:'Iron Lung',
-      nota: '0',
+      nota: '10',
       Image: 'imagens/melhor filme poster.jpg'
 },
 {
