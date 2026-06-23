@@ -1,7 +1,6 @@
-import { StatusBar } from 'expo-status-bar';
+
 import { StyleSheet, Text, View, TouchableOpacity, TextInput, Image } from 'react-native';
 import styles from './styles'
-import Feather from '@expo/vector-icons/Feather';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
 
